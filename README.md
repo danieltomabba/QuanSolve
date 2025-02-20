@@ -58,77 +58,9 @@ Below is a sample structure for the QuanSolve project:
 QuanSolve/ ├── backend/ │ ├── app.py │ ├── config.py │ ├── models/ │ │ ├── user.py │ │ ├── dataset.py │ │ └── analytics.py │ ├── routes/ │ │ ├── auth.py │ │ ├── data.py │ │ └── analytics.py │ ├── utils/ │ │ ├── data_quality.py │ │ └── gpt_integration.py │ ├── tests/ │ │ ├── test_auth.py │ │ └── test_data.py │ └── requirements.txt ├── frontend/ │ ├── package.json │ ├── public/ │ │ └── index.html │ ├── src/ │ │ ├── components/ │ │ │ ├── Dashboard.js │ │ │ ├── DataUpload.js │ │ │ └── Chatbot.js │ │ ├── App.js │ │ ├── index.js │ │ └── services/ │ │ └── api.js │ └── tests/ ├── middleware/ │ ├── server.js │ └── package.json ├── database/ │ ├── schema.sql │ └── migrations/ ├── deployment/ │ ├── Dockerfile │ ├── docker-compose.yml │ └── aws_deployment_script.sh
 
 
----
 
-## Getting Started
-
-### Prerequisites
-
-- **Backend:** Python 3.9+, pip, virtualenv  
-- **Frontend:** Node.js, npm or yarn  
-- **Database:** PostgreSQL (with PostGIS extension)  
-- **Containerization (Optional):** Docker and Docker Compose  
-
-### Installation
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/QuanSolve.git
-   cd QuanSolve
-Setup the Backend:
-
-bash
-Copy
-cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-pip install -r requirements.txt
-Setup the Frontend:
-
-bash
-Copy
-cd ../frontend
-npm install
-Configure Environment Variables:
-
-Create a .env file in the backend directory with necessary variables such as OPENAI_API_KEY and DATABASE_URL.
-
-Run the Application:
-
-Backend:
-
-bash
-Copy
-cd backend
-python app.py
-Frontend:
-
-bash
-Copy
-cd frontend
-npm start
-(Optional) Run via Docker Compose:
-
-bash
-Copy
-docker-compose up --build
-Usage
-Data Upload: Users can upload datasets via the frontend interface.
-Analytics Generation: The backend validates data quality, processes data, and returns insights.
-Dashboard & Mapping: Visualize results on interactive dashboards with integrated GIS mapping.
-Subscription: Basic features are free, with advanced analytics available for premium subscribers via Stripe integration.
-Contributing
-Contributions are welcome! Please review our CONTRIBUTING.md for guidelines on submitting pull requests and reporting issues.
-
-Roadmap
-Phase 1: Build core functionalities including data upload, validation, and basic analytics.
-Phase 2: Integrate AI-driven insights and advanced statistical analyses.
-Phase 3: Develop interactive dashboards and GIS mapping features.
-Phase 4: Implement chatbot assistance and subscription management.
-Phase 5: Optimize deployment and scale using cloud infrastructure.
-License
+## License
 QuanSolve is open source and available under the Apache License 2.0.
 
-Contact
+## Contact
 For any questions or feedback, please open an issue or contact the project maintainer at support@quansolve.com.
