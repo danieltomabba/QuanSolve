@@ -1,4 +1,4 @@
-```markdown
+
 # QuanSolve: AI-Driven Clarity, Results, and Invisible Value
 
 QuanSolve reimagines AI consulting for research, academics, and public health by providing an end-to-end solution that demystifies AI, delivers tangible results, and creates invisible value—trust, efficiency, and peace of mind. In a market where AI is expected to add $15.7 trillion to global GDP by 2030, QuanSolve is designed to answer the essential questions: **Why** invest in AI and **how** it solves real-world problems.
